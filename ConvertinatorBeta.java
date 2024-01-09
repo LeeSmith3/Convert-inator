@@ -1,5 +1,7 @@
 import java.util.*;
 public class ConvertinatorBeta {
+
+    List<String> unitClass = new ArrayList<>(Arrays.asList("Temperature", "Speed", "Area", "Volume", "Length", "Energy"));
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("\n░░      ░░░      ░░   ░░░  ░  ░░░░  ░        ░       ░░        ░        ░   ░░░  ░░      ░░        ░░      ░░       ░░\n" +
