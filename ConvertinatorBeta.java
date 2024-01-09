@@ -8,7 +8,7 @@ public class ConvertinatorBeta {
                 "█  ████  █  ████  █  ██    ███    ███  ███████  ███  █████  ███████  ████  ██    █        ████  ████  ████  █  ███  ██\n" +
                 "██      ███      ██  ███   ████  ████        █  ████  ████  ████        █  ███   █  ████  ████  █████      ██  ████  █\n");
         System.out.println("Welcome to the Convert-inator!\n");
-        System.out.print("What type of units would you like to convert today?");
+        System.out.print("What type of units would you like to convert today? ");
         String unitClass = input.next();
     }
 }
