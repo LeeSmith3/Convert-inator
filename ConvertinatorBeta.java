@@ -32,22 +32,42 @@ public class ConvertinatorBeta {
         String tempUnits = input.next();
 
         switch (tempUnits.toUpperCase()){
-            case "C2F" -> celsiusToFahrenheit();
-            case "F2C" -> fahrToCels();
-            case "K2F" -> kelvToFahr();
-            case "F2K" -> fahrToKelv();
-            case "K2C" -> kelvToCels();
-            case "C2K" -> CelsToKelv();
+            case "C2F":
+                celsToFahr();
+                break;
+            case "F2C":
+                fahrToCels();
+                break;
+            case "K2F":
+                kelvToFahr();
+                break;
+            case "F2K":
+                fahrToKelv();
+                break;
+            case "K2C":
+                kelvToCels();
+                break;
+            case "C2K":
+                CelsToKelv();
+                break;
+            case "HELP":
+                System.out.println();
+            default:
+                System.out.print("Invalid input. Please try again.\n") ;
+                tempMode();
+                break;
         }
 
     }
 
-    public static void celsiusToFahrenheit(){
+    public static void celsToFahr(){
         Scanner input = new Scanner(System.in);
         System.out.print("\n Please enter your temperature in celsius: ");
         float temp = input.nextFloat();
 
         float convertedTemp = (temp * 9/5) + 32;
+
+        System.out.println("Your temperature is: "+convertedTemp+"°F. Your conversion has been stored in a file.");
     }
 
     static void fahrToCels(){
@@ -56,30 +76,44 @@ public class ConvertinatorBeta {
         float temp = input.nextFloat();
 
         float convertedTemp = (temp - 32) * 5/9;
+
+        System.out.println("Your temperature is: "+convertedTemp+"°C. Your conversion has been stored in a file.");
     }
 
     public static void kelvToFahr(){
         Scanner input = new Scanner(System.in);
         System.out.print("\n Please enter your temperature in kelvin: ");
         float temp = input.nextFloat();
+
+        double convertedTemp = (temp - 273.15) * 9/5 + 32;
+
+        System.out.println("Your temperature is: "+convertedTemp+"°F. Your conversion has been stored in a file.");
     };
 
     public static void fahrToKelv(){
         Scanner input = new Scanner(System.in);
         System.out.print("\n Please enter your temperature in fahrenheit: ");
         float temp = input.nextFloat();
+
+        double convertedTemp = (temp - 32) * 5/9 + 273.15;
+
+        System.out.println("Your temperature is: "+convertedTemp+"°K. Your conversion has been stored in a file.");
     }
 
     public static void kelvToCels(){
         Scanner input = new Scanner(System.in);
         System.out.print("\n Please enter your temperature in kelvin: ");
         float temp = input.nextFloat();
+
+        double convertedTemp = temp - 273.15;
     }
 
     public static void CelsToKelv(){
         Scanner input = new Scanner(System.in);
         System.out.print("\n Please enter your temperature in celsius: ");
         float temp = input.nextFloat();
+
+        double convertedTemp = temp + 273.15;
     }
     public static void speedMode(){
         Scanner input = new Scanner(System.in);
