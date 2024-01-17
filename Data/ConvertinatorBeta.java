@@ -847,7 +847,7 @@ public class ConvertinatorBeta {
             metresToKm();
         }
 
-        double convertedLength = length * 100;
+        double convertedLength = length / 1000;
         System.out.println("Your length is: "+convertedLength+"km. Your conversion has been stored in a file.");
 
         try {
@@ -981,7 +981,7 @@ public class ConvertinatorBeta {
             kjToJoules();
         }
 
-        double convertedEnergy = energy / 1000.00;
+        double convertedEnergy = energy * 1000.00;
         System.out.println("Your energy measurement is: "+convertedEnergy+"j. Your conversion has been stored in a file.");
 
         try {
