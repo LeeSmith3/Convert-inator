@@ -736,6 +736,7 @@ public class ConvertinatorBeta {
                 break;
             case "KM2CM":
                 kmToCm();
+                break;
             case "CM2KM":
                 cmToKm();
                 break;
