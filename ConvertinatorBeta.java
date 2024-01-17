@@ -51,7 +51,7 @@ public class ConvertinatorBeta {
                 CelsToKelv();
                 break;
             case "HELP":
-                System.out.println();
+                tempSheet();
             default:
                 System.out.print("Invalid input. Please try again.\n") ;
                 tempMode();
@@ -142,7 +142,7 @@ public class ConvertinatorBeta {
                 mphToKph();
                 break;
             case "HELP":
-                System.out.println();
+                speedSheet();
             default:
                 System.out.print("Invalid input. Please try again.\n") ;
                 tempMode();
@@ -150,6 +150,59 @@ public class ConvertinatorBeta {
         }
     }
 
+    public static void mpsToKph(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your speed in metres/second: ");
+        int speed = input.nextInt();
+
+        double convertedSpeed = speed * 3.6;
+        System.out.println("Your speed is: "+convertedSpeed+"kph. Your conversion has been stored in a file.");
+    }
+
+    public static void kphToMps(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your speed in kilometres/hour: ");
+        int speed = input.nextInt();
+
+        double convertedSpeed = speed / 3.6;
+        System.out.println("Your speed is: "+convertedSpeed+"m/s. Your conversion has been stored in a file.");
+    }
+
+    public static void mphToMps(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your speed in miles/hour: ");
+        int speed = input.nextInt();
+
+        double convertedSpeed = speed / 2.237;
+        System.out.println("Your speed is: "+convertedSpeed+"m/s. Your conversion has been stored in a file.");
+    }
+
+    public static void mpsToMph(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your speed in metres/second: ");
+        int speed = input.nextInt();
+
+        double convertedSpeed = speed * 2.237;
+        System.out.println("Your speed is: "+convertedSpeed+"mph. Your conversion has been stored in a file.");
+    }
+
+    public static void kphToMph(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your speed in kilometres/hour: ");
+        int speed = input.nextInt();
+
+        double convertedSpeed = speed / 1.609;
+        System.out.println("Your speed is: "+convertedSpeed+"mph. Your conversion has been stored in a file.");
+    }
+
+    public static void mphToKph(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your speed in miles/hour: ");
+        int speed = input.nextInt();
+
+        double convertedSpeed = speed * 1.609;
+        System.out.println("Your speed is: "+convertedSpeed+"kph. Your conversion has been stored in a file.");
+    }
     public static void areaMode(){
         Scanner input = new Scanner(System.in);
         System.out.println("Type \"help\" for a list of commands.");
@@ -167,23 +220,55 @@ public class ConvertinatorBeta {
                 metres2ToKm2();
                 break;
             case "SKM2M":
-                Km2toMetres2();
+                km2toMetres2();
                 break;
             case "CM2SKM":
                 cm2ToKm2();
                 break;
             case "SKM2CM":
-                Km2ToCm2();
+                km2ToCm2();
                 break;
             case "HELP":
-                System.out.println();
+                areaSheet();
             default:
                 System.out.print("Invalid input. Please try again.\n") ;
                 tempMode();
                 break;
         }
     }
+    public static void metres2ToCm2(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your area in metres^2: ");
+        int length = input.nextInt();
 
+        double convertedLength = length * 10000;
+        System.out.println("Your speed is: "+convertedLength+"cm. Your conversion has been stored in a file.");
+    }
+
+    public static void cm2ToMetres2(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your area in centimetres^2: ");
+        int length = input.nextInt();
+
+        double convertedSpeed = length / 10000;
+        System.out.println("Your speed is: "+convertedSpeed+"m/s. Your conversion has been stored in a file.");
+    }
+
+    public static void metres2ToKm2(){
+
+    }
+
+    public static void km2toMetres2(){
+
+    }
+
+    public static void cm2ToKm2(){
+
+    }
+
+    public static void km2ToCm2(){
+
+    }
     public static void volumeMode(){
         Scanner input = new Scanner(System.in);
         System.out.println("Type \"help\" for a list of commands.");
@@ -198,12 +283,20 @@ public class ConvertinatorBeta {
                 cm3ToMetres3();
                 break;
             case "HELP":
-                System.out.println();
+                volumeSheet();
             default:
                 System.out.print("Invalid input. Please try again.\n") ;
                 tempMode();
                 break;
         }
+    }
+
+    public static void metres3ToCm3(){
+
+    }
+
+    public static void cm3ToMetres3(){
+
     }
 
     public static void lengthMode(){
@@ -231,12 +324,36 @@ public class ConvertinatorBeta {
                 cmToKm();
                 break;
             case "HELP":
-                System.out.println();
+                lengthSheet();
             default:
                 System.out.print("Invalid input. Please try again.\n") ;
                 tempMode();
                 break;
         }
+    }
+
+    public static void metresToCm(){
+
+    }
+
+    public static void cmToMetres(){
+
+    }
+
+    public static void kmToMetres(){
+
+    }
+
+    public static void metresToKm(){
+
+    }
+
+    public static void kmToCm(){
+
+    }
+
+    public static void cmToKm(){
+
     }
 
     public static void energyMode(){
@@ -250,10 +367,10 @@ public class ConvertinatorBeta {
                 joulesToKj();
                 break;
             case "KJ2J":
-                cmToMetres();
+                kjtoJoules();
                 break;
             case "HELP":
-                System.out.println();
+                energySheet();
             default:
                 System.out.print("Invalid input. Please try again.\n") ;
                 tempMode();
@@ -261,6 +378,13 @@ public class ConvertinatorBeta {
         }
     }
 
+    public static void joulesToKj(){
+
+    }
+
+    public static void kjtoJoules(){
+
+    }
     // --------Help-sheets--------
 
     // main helpsheet - displays unit types that can be converted
@@ -278,28 +402,57 @@ public class ConvertinatorBeta {
 
     // temperature helpsheet - displays conversion options for temperature
     public static void tempSheet(){
-        System.out.print("\n There are six commands that can currently be used");
+        System.out.print("\n There are six commands that can currently be used" +
+                "\n - c2f: Celsius to Fahrenheit conversion" +
+                "\n - f2c: Fahrenheit to Celsius conversion" +
+                "\n - k2f: Kelvin to Fahrenheit conversion" +
+                "\n - f2k: Fahrenheit to Kelvin conversion" +
+                "\n - k2c: Kelvin to Celsius conversion" +
+                "\n - c2k: Celsius to Kelvin conversion");
+        tempMode();
     }
     // speed helpsheet - displays conversion options for speed
     public static void speedSheet(){
-
+        System.out.print("\n There are six commands that can currently be used" +
+                "\n - mps2kph: Metres/s to Kilometres/h conversion" +
+                "\n - kph2mps: Kilometres/h to Metres/s conversion" +
+                "\n - mph2mps: Miles/h to Metres/s conversion" +
+                "\n - mps2mph: Metres/s to Miles/h conversion" +
+                "\n - kph2mph: Kilometres/h to Miles/h conversion" +
+                "\n - mph2kps: Miles/h to Kilometres/h conversion");
     }
     // area helpsheet - displays conversion options for area
     public static void areaSheet(){
-
+        System.out.print("\n There are six commands that can currently be used" +
+                "\n - m2cm: Metres^2 to Centimetres^2 conversion" +
+                "\n - cm2m: Centimetres^2 to Metres^2 conversion" +
+                "\n - m2skm: Metres^2 to Square Kilometre conversion" +
+                "\n - skm2m: Square Kilometre to Metres^2 conversion" +
+                "\n - cm2skm: Centimetres^2 to Square Kilometre conversion" +
+                "\n - skm2cm: Square Kilometre to Centimetres^2 conversion");
     }
     // volume helpsheet - displays conversion options for volume
     public static void volumeSheet(){
-
+        System.out.print("\n There are two commands that can currently be used" +
+                "\n - m2cm: Metres^3 to Centimetres^3 conversion" +
+                "\n - cm2m: Centimetres^3 to Metres^3 conversion");
     }
     // length helpsheet - displays conversion options for length
     public static void lengthSheet(){
-
+        System.out.print("\n There are six commands that can currently be used" +
+                "\n - m2cm: Metres to Centimetres conversion" +
+                "\n - cm2m: Centimetres to Metres conversion" +
+                "\n - km2m: Metres to Kilometres conversion" +
+                "\n - m2km: Kilometres to Metres conversion" +
+                "\n - km2cm: Centimetres to Kilometres conversion" +
+                "\n - cm2km: Kilometres to Centimetres conversion");
     }
     // energy helpsheet - displays conversion options for energy
 
     public static void energySheet(){
-
+        System.out.print("\n There are two commands that can currently be used" +
+                "\n j2kj: Joules to Kilojoules conversion" +
+                "\n - kj2j: Kilojoules to Joules conversion");
     }
 
     // --------ERROR SCREENS--------
