@@ -64,9 +64,9 @@ public class ConvertinatorBeta {
     }
 
     public static void celsToFahr(){
-        
+
         float temp = 0;
-        
+
         try{
             Scanner input = new Scanner(System.in);
             System.out.print("\n Please enter your temperature in celsius: ");
@@ -89,9 +89,11 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
-    static void fahrToCels(){
+    public static void fahrToCels(){
 
         float temp = 0;
 
@@ -116,6 +118,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void kelvToFahr(){
@@ -144,6 +148,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void fahrToKelv(){
@@ -172,6 +178,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void kelvToCels(){
@@ -198,6 +206,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void celsToKelv(){
@@ -224,6 +234,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
     public static void speedMode(){
         Scanner input = new Scanner(System.in);
@@ -283,6 +295,8 @@ public class ConvertinatorBeta {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
 
+        startScreen();
+
     }
 
     public static void kphToMps(){
@@ -309,6 +323,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void mphToMps(){
@@ -335,6 +351,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void mpsToMph(){
@@ -361,6 +379,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void kphToMph(){
@@ -387,6 +407,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void mphToKph(){
@@ -413,6 +435,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
     public static void areaMode(){
         Scanner input = new Scanner(System.in);
@@ -461,6 +485,8 @@ public class ConvertinatorBeta {
             metres2ToCm2();
         }
 
+        startScreen();
+
         double convertedArea = area * 10000;
         System.out.println("Your area is: "+convertedArea+"cm^2. Your conversion has been stored in a file.");
 
@@ -471,6 +497,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void cm2ToMetres2(){
@@ -497,6 +525,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void metres2ToKm2(){
@@ -522,6 +552,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void km2toMetres2(){
@@ -547,6 +579,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void cm2ToKm2(){
@@ -573,6 +607,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void km2ToCm2(){
@@ -599,6 +635,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
     public static void volumeMode(){
         Scanner input = new Scanner(System.in);
@@ -646,6 +684,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void cm3ToMetres3(){
@@ -672,6 +712,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void lengthMode(){
@@ -731,6 +773,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void cmToMetres(){
@@ -757,6 +801,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void kmToMetres(){
@@ -783,6 +829,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void metresToKm(){
@@ -809,6 +857,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void kmToCm(){
@@ -835,6 +885,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void cmToKm(){
@@ -861,6 +913,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void energyMode(){
@@ -909,6 +963,8 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
 
     public static void kjToJoules(){
@@ -935,7 +991,10 @@ public class ConvertinatorBeta {
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
         }
+
+        startScreen();
     }
+
     // --------Help-sheets--------
 
     // main helpsheet - displays unit types that can be converted
