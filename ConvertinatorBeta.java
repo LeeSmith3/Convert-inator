@@ -2,7 +2,7 @@ import java.util.*;
 public class ConvertinatorBeta {
 
     public static void main(String[] args) {
-        startScreen();;
+        startScreen();
     }
     public static void startScreen(){
         Scanner input = new Scanner(System.in);
@@ -88,7 +88,7 @@ public class ConvertinatorBeta {
         double convertedTemp = (temp - 273.15) * 9/5 + 32;
 
         System.out.println("Your temperature is: "+convertedTemp+"°F. Your conversion has been stored in a file.");
-    };
+    }
 
     public static void fahrToKelv(){
         Scanner input = new Scanner(System.in);
@@ -115,6 +115,7 @@ public class ConvertinatorBeta {
         float temp = input.nextFloat();
 
         double convertedTemp = temp + 273.15;
+        System.out.println("Your temperature is: "+convertedTemp+"°C. Your conversion has been stored in a file.");
     }
     public static void speedMode(){
         Scanner input = new Scanner(System.in);
@@ -153,7 +154,7 @@ public class ConvertinatorBeta {
     public static void mpsToKph(){
         Scanner input = new Scanner(System.in);
         System.out.print("\n Please enter your speed in metres/second: ");
-        int speed = input.nextInt();
+        float speed = input.nextFloat();
 
         double convertedSpeed = speed * 3.6;
         System.out.println("Your speed is: "+convertedSpeed+"kph. Your conversion has been stored in a file.");
@@ -162,7 +163,7 @@ public class ConvertinatorBeta {
     public static void kphToMps(){
         Scanner input = new Scanner(System.in);
         System.out.print("\n Please enter your speed in kilometres/hour: ");
-        int speed = input.nextInt();
+        float speed = input.nextFloat();
 
         double convertedSpeed = speed / 3.6;
         System.out.println("Your speed is: "+convertedSpeed+"m/s. Your conversion has been stored in a file.");
@@ -171,7 +172,7 @@ public class ConvertinatorBeta {
     public static void mphToMps(){
         Scanner input = new Scanner(System.in);
         System.out.print("\n Please enter your speed in miles/hour: ");
-        int speed = input.nextInt();
+        float speed = input.nextFloat();
 
         double convertedSpeed = speed / 2.237;
         System.out.println("Your speed is: "+convertedSpeed+"m/s. Your conversion has been stored in a file.");
@@ -180,7 +181,7 @@ public class ConvertinatorBeta {
     public static void mpsToMph(){
         Scanner input = new Scanner(System.in);
         System.out.print("\n Please enter your speed in metres/second: ");
-        int speed = input.nextInt();
+        float speed = input.nextFloat();
 
         double convertedSpeed = speed * 2.237;
         System.out.println("Your speed is: "+convertedSpeed+"mph. Your conversion has been stored in a file.");
@@ -189,7 +190,7 @@ public class ConvertinatorBeta {
     public static void kphToMph(){
         Scanner input = new Scanner(System.in);
         System.out.print("\n Please enter your speed in kilometres/hour: ");
-        int speed = input.nextInt();
+        float speed = input.nextFloat();
 
         double convertedSpeed = speed / 1.609;
         System.out.println("Your speed is: "+convertedSpeed+"mph. Your conversion has been stored in a file.");
@@ -198,7 +199,7 @@ public class ConvertinatorBeta {
     public static void mphToKph(){
         Scanner input = new Scanner(System.in);
         System.out.print("\n Please enter your speed in miles/hour: ");
-        int speed = input.nextInt();
+        float speed = input.nextFloat();
 
         double convertedSpeed = speed * 1.609;
         System.out.println("Your speed is: "+convertedSpeed+"kph. Your conversion has been stored in a file.");
@@ -239,35 +240,55 @@ public class ConvertinatorBeta {
     public static void metres2ToCm2(){
         Scanner input = new Scanner(System.in);
         System.out.print("\n Please enter your area in metres^2: ");
-        int length = input.nextInt();
+        float length = input.nextFloat();
 
         double convertedLength = length * 10000;
-        System.out.println("Your speed is: "+convertedLength+"cm. Your conversion has been stored in a file.");
+        System.out.println("Your length is: "+convertedLength+"cm^2. Your conversion has been stored in a file.");
     }
 
     public static void cm2ToMetres2(){
         Scanner input = new Scanner(System.in);
         System.out.print("\n Please enter your area in centimetres^2: ");
-        int length = input.nextInt();
+        float length = input.nextFloat();
 
-        double convertedSpeed = length / 10000;
-        System.out.println("Your speed is: "+convertedSpeed+"m/s. Your conversion has been stored in a file.");
+        double convertedLength = length / 10000.0;
+        System.out.println("Your length is: "+convertedLength+"m^2. Your conversion has been stored in a file.");
     }
 
     public static void metres2ToKm2(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your area in metres^2: ");
+        float length = input.nextFloat();
 
+        double convertedLength = length / 1000000.0;
+        System.out.println("Your length is: "+convertedLength+"km^2. Your conversion has been stored in a file.");
     }
 
     public static void km2toMetres2(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your area in kilometres^2: ");
+        float length = input.nextFloat();
 
+        double convertedLength = length * 1000000;
+        System.out.println("Your length is: "+convertedLength+"m^2. Your conversion has been stored in a file.");
     }
 
     public static void cm2ToKm2(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your area in centimetres^2: ");
+        float length = input.nextFloat();
 
+        double convertedLength = length / 10000000000.0;
+        System.out.println("Your length is: "+convertedLength+"km^2. Your conversion has been stored in a file.");
     }
 
     public static void km2ToCm2(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your area in kilometres^2: ");
+        float length = input.nextFloat();
 
+        double convertedLength = length * 10000000000.0;
+        System.out.println("Your length is: "+convertedLength+"m^2. Your conversion has been stored in a file.");
     }
     public static void volumeMode(){
         Scanner input = new Scanner(System.in);
@@ -292,11 +313,21 @@ public class ConvertinatorBeta {
     }
 
     public static void metres3ToCm3(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your volume in metres^3: ");
+        float length = input.nextFloat();
 
+        double convertedLength = length * 1000000.0;
+        System.out.println("Your length is: "+convertedLength+"cm^3. Your conversion has been stored in a file.");
     }
 
     public static void cm3ToMetres3(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your volume in centimetres^3: ");
+        float length = input.nextFloat();
 
+        double convertedLength = length / 1000000.0;
+        System.out.println("Your length is: "+convertedLength+"m^3. Your conversion has been stored in a file.");
     }
 
     public static void lengthMode(){
@@ -333,27 +364,57 @@ public class ConvertinatorBeta {
     }
 
     public static void metresToCm(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your length in metres: ");
+        float length = input.nextFloat();
 
+        double convertedLength = length * 100;
+        System.out.println("Your length is: "+convertedLength+"cm. Your conversion has been stored in a file.");
     }
 
     public static void cmToMetres(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your length in centimetres: ");
+        float length = input.nextFloat();
 
+        double convertedLength = length / 100.00;
+        System.out.println("Your length is: "+convertedLength+"m. Your conversion has been stored in a file.");
     }
 
     public static void kmToMetres(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your length in metres: ");
+        float length = input.nextFloat();
 
+        double convertedLength = length * 1000;
+        System.out.println("Your length is: "+convertedLength+"m. Your conversion has been stored in a file.");
     }
 
     public static void metresToKm(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your length in metres: ");
+        float length = input.nextInt();
 
+        double convertedLength = length * 100;
+        System.out.println("Your length is: "+convertedLength+"km. Your conversion has been stored in a file.");
     }
 
     public static void kmToCm(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your length in kilometres: ");
+        float length = input.nextInt();
 
+        double convertedLength = length * 100000;
+        System.out.println("Your length is: "+convertedLength+"cm. Your conversion has been stored in a file.");
     }
 
     public static void cmToKm(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your length in centimetres: ");
+        float length = input.nextInt();
 
+        double convertedLength = length / 100000;
+        System.out.println("Your length is: "+convertedLength+"km. Your conversion has been stored in a file.");
     }
 
     public static void energyMode(){
@@ -367,7 +428,7 @@ public class ConvertinatorBeta {
                 joulesToKj();
                 break;
             case "KJ2J":
-                kjtoJoules();
+                kjToJoules();
                 break;
             case "HELP":
                 energySheet();
@@ -379,11 +440,21 @@ public class ConvertinatorBeta {
     }
 
     public static void joulesToKj(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your energy in joules: ");
+        float energy = input.nextFloat();
 
+        double convertedEnergy = energy / 1000.00;
+        System.out.println("Your length is: "+convertedEnergy+"kj. Your conversion has been stored in a file.");
     }
 
-    public static void kjtoJoules(){
+    public static void kjToJoules(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\n Please enter your energy in joules: ");
+        float energy = input.nextFloat();
 
+        double convertedEnergy = energy / 1000.00;
+        System.out.println("Your length is: "+convertedEnergy+"j. Your conversion has been stored in a file.");
     }
     // --------Help-sheets--------
 
