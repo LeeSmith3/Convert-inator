@@ -108,7 +108,7 @@ public class ConvertinatorBeta {
         }
 
         float convertedTemp = (temp - 32) * 5/9;
-
+        System.out.println("(Temperature - 32) X 5/9");
         System.out.println("Your temperature is: "+convertedTemp+"°C. Your conversion has been stored in a file.");
 
         try {
@@ -138,7 +138,7 @@ public class ConvertinatorBeta {
         
 
         double convertedTemp = (temp - 273.15) * 9/5 + 32;
-
+        System.out.println("(Temperature - 273.15) X 9/5 + 32");
         System.out.println("Your temperature is: "+convertedTemp+"°F. Your conversion has been stored in a file.");
 
         try {
@@ -168,7 +168,7 @@ public class ConvertinatorBeta {
 
 
         double convertedTemp = (temp - 32) * 5/9 + 273.15;
-
+        System.out.println("(Temperature - 32) * 5/9 + 273.15");
         System.out.println("Your temperature is: "+convertedTemp+"°K. Your conversion has been stored in a file.");
 
         try {
@@ -197,6 +197,7 @@ public class ConvertinatorBeta {
         }
 
         double convertedTemp = temp - 273.15;
+        System.out.println("Temperature - 273.15");
         System.out.println("Your temperature is: "+convertedTemp+"°C. Your conversion has been stored in a file.");
 
         try {
@@ -225,6 +226,7 @@ public class ConvertinatorBeta {
         }
 
         double convertedTemp = temp + 273.15;
+        System.out.println("Temperature + 273.15");
         System.out.println("Your temperature is: "+convertedTemp+"°K. Your conversion has been stored in a file.");
 
         try {
@@ -285,6 +287,7 @@ public class ConvertinatorBeta {
         }
 
         double convertedSpeed = speed * 3.6;
+        System.out.println("Speed X 3.6");
         System.out.println("Your speed is: "+convertedSpeed+"kph. Your conversion has been stored in a file.");
 
         try {
@@ -314,6 +317,7 @@ public class ConvertinatorBeta {
         }
 
         double convertedSpeed = speed / 3.6;
+        System.out.println("Speed / 3.6");
         System.out.println("Your speed is: "+convertedSpeed+"m/s. Your conversion has been stored in a file.");
 
         try {
@@ -342,6 +346,7 @@ public class ConvertinatorBeta {
         }
 
         double convertedSpeed = speed / 2.237;
+        System.out.println("Speed / 2.237");
         System.out.println("Your speed is: "+convertedSpeed+"m/s. Your conversion has been stored in a file.");
 
         try {
@@ -370,6 +375,7 @@ public class ConvertinatorBeta {
         }
 
         double convertedSpeed = speed * 2.237;
+        System.out.println("Speed X 2.237");
         System.out.println("Your speed is: "+convertedSpeed+"mph. Your conversion has been stored in a file.");
 
         try {
@@ -398,6 +404,7 @@ public class ConvertinatorBeta {
         }
 
         double convertedSpeed = speed / 1.609;
+        System.out.println("Speed / 1.609");
         System.out.println("Your speed is: "+convertedSpeed+"mph. Your conversion has been stored in a file.");
 
         try {
@@ -426,6 +433,7 @@ public class ConvertinatorBeta {
         }
 
         double convertedSpeed = speed * 1.609;
+        System.out.println("Speed X 1.609");
         System.out.println("Your speed is: "+convertedSpeed+"kph. Your conversion has been stored in a file.");
 
         try {
@@ -487,6 +495,7 @@ public class ConvertinatorBeta {
 
 
         double convertedArea = area * 10000;
+        System.out.println("Area X 10000");
         System.out.println("Your area is: "+convertedArea+"cm^2. Your conversion has been stored in a file.");
 
         try {
@@ -515,6 +524,7 @@ public class ConvertinatorBeta {
         }
 
         double convertedArea = area / 10000.0;
+        System.out.println("Area / 10000");
         System.out.println("Your area is: "+convertedArea+"m^2. Your conversion has been stored in a file.");
 
         try {
@@ -543,6 +553,7 @@ public class ConvertinatorBeta {
         }
 
         double convertedArea = area / 1000000.0;
+        System.out.println("Area / 1000000");
         System.out.println("Your area is: "+convertedArea+"km^2. Your conversion has been stored in a file.");
         try {
             FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
@@ -570,6 +581,7 @@ public class ConvertinatorBeta {
         }
 
         double convertedArea = area * 1000000;
+        System.out.println("Area X 1000000");
         System.out.println("Your area is: "+convertedArea+"m^2. Your conversion has been stored in a file.");
         try {
             FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
@@ -597,6 +609,7 @@ public class ConvertinatorBeta {
         }
 
         double convertedArea = area / 10000000000.0;
+        System.out.println("Area / 10000000000");
         System.out.println("Your area is: "+convertedArea+"km^2. Your conversion has been stored in a file.");
 
         try {
@@ -625,6 +638,7 @@ public class ConvertinatorBeta {
         }
 
         double convertedArea = area * 10000000000.0;
+        System.out.println("Area X 10000000000");
         System.out.println("Your area is: "+convertedArea+"cm^2. Your conversion has been stored in a file.");
 
         try {
@@ -674,6 +688,7 @@ public class ConvertinatorBeta {
         }
 
         double convertedVolume = volume * 1000000.0;
+        System.out.println("Volume X 1000000");
         System.out.println("Your volume is: "+convertedVolume+"cm^3. Your conversion has been stored in a file.");
 
         try {
@@ -702,6 +717,7 @@ public class ConvertinatorBeta {
         }
 
         double convertedVolume = volume / 1000000.0;
+        System.out.println("Volume / 1000000");
         System.out.println("Your volume is: "+convertedVolume+"m^3. Your conversion has been stored in a file.");
 
         try {
@@ -764,6 +780,7 @@ public class ConvertinatorBeta {
         }
 
         double convertedLength = length * 100;
+        System.out.println("length X 100");
         System.out.println("Your length is: "+convertedLength+"cm. Your conversion has been stored in a file.");
 
         try {
@@ -999,70 +1016,91 @@ public class ConvertinatorBeta {
 
     // main helpsheet - displays unit types that can be converted
     public static void helpSheet(){
-        System.out.print("\n There are six commands that can currently be used: " +
-                "\n - Temperature: enables temperature conversion " +
-                "\n - Speed: enables speed conversion " +
-                "\n - Area: enables area conversion " +
-                "\n - Volume: enables volume conversion " +
-                "\n - Length: enables length conversion " +
-                "\n - Energy: enables energy conversion " +
-                "\n \n");
+        System.out.print("""
+
+                 There are six commands that can currently be used:\s
+                 - Temperature: enables temperature conversion\s
+                 - Speed: enables speed conversion\s
+                 - Area: enables area conversion\s
+                 - Volume: enables volume conversion\s
+                 - Length: enables length conversion\s
+                 - Energy: enables energy conversion\s
+                \s
+                """);
         
     }
 
     // temperature helpsheet - displays conversion options for temperature
     public static void tempSheet(){
-        System.out.print("\n There are six commands that can currently be used" +
-                "\n - c2f: Celsius to Fahrenheit conversion" +
-                "\n - f2c: Fahrenheit to Celsius conversion" +
-                "\n - k2f: Kelvin to Fahrenheit conversion" +
-                "\n - f2k: Fahrenheit to Kelvin conversion" +
-                "\n - k2c: Kelvin to Celsius conversion" +
-                "\n - c2k: Celsius to Kelvin conversion");
+        System.out.print("""
+
+                 There are six commands that can currently be used
+                 - c2f: Celsius to Fahrenheit conversion
+                 - f2c: Fahrenheit to Celsius conversion
+                 - k2f: Kelvin to Fahrenheit conversion
+                 - f2k: Fahrenheit to Kelvin conversion
+                 - k2c: Kelvin to Celsius conversion
+                 - c2k: Celsius to Kelvin conversion\
+                """);
         tempMode();
     }
     // speed helpsheet - displays conversion options for speed
     public static void speedSheet(){
-        System.out.print("\n There are six commands that can currently be used" +
-                "\n - mps2kph: Metres/s to Kilometres/h conversion" +
-                "\n - kph2mps: Kilometres/h to Metres/s conversion" +
-                "\n - mph2mps: Miles/h to Metres/s conversion" +
-                "\n - mps2mph: Metres/s to Miles/h conversion" +
-                "\n - kph2mph: Kilometres/h to Miles/h conversion" +
-                "\n - mph2kps: Miles/h to Kilometres/h conversion");
+        System.out.print("""
+
+                 There are six commands that can currently be used
+                 - mps2kph: Metres/s to Kilometres/h conversion
+                 - kph2mps: Kilometres/h to Metres/s conversion
+                 - mph2mps: Miles/h to Metres/s conversion
+                 - mps2mph: Metres/s to Miles/h conversion
+                 - kph2mph: Kilometres/h to Miles/h conversion
+                 - mph2kps: Miles/h to Kilometres/h conversion\
+                """);
     }
     // area helpsheet - displays conversion options for area
     public static void areaSheet(){
-        System.out.print("\n There are six commands that can currently be used" +
-                "\n - m2cm: Metres^2 to Centimetres^2 conversion" +
-                "\n - cm2m: Centimetres^2 to Metres^2 conversion" +
-                "\n - m2skm: Metres^2 to Square Kilometre conversion" +
-                "\n - skm2m: Square Kilometre to Metres^2 conversion" +
-                "\n - cm2skm: Centimetres^2 to Square Kilometre conversion" +
-                "\n - skm2cm: Square Kilometre to Centimetres^2 conversion");
+        System.out.print("""
+
+                 There are six commands that can currently be used
+                 - m2cm: Metres^2 to Centimetres^2 conversion
+                 - cm2m: Centimetres^2 to Metres^2 conversion
+                 - m2skm: Metres^2 to Square Kilometre conversion
+                 - skm2m: Square Kilometre to Metres^2 conversion
+                 - cm2skm: Centimetres^2 to Square Kilometre conversion
+                 - skm2cm: Square Kilometre to Centimetres^2 conversion\
+                """);
     }
     // volume helpsheet - displays conversion options for volume
     public static void volumeSheet(){
-        System.out.print("\n There are two commands that can currently be used" +
-                "\n - m2cm: Metres^3 to Centimetres^3 conversion" +
-                "\n - cm2m: Centimetres^3 to Metres^3 conversion");
+        System.out.print("""
+
+                 There are two commands that can currently be used
+                 - m2cm: Metres^3 to Centimetres^3 conversion
+                 - cm2m: Centimetres^3 to Metres^3 conversion\
+                """);
     }
     // length helpsheet - displays conversion options for length
     public static void lengthSheet(){
-        System.out.print("\n There are six commands that can currently be used" +
-                "\n - m2cm: Metres to Centimetres conversion" +
-                "\n - cm2m: Centimetres to Metres conversion" +
-                "\n - km2m: Metres to Kilometres conversion" +
-                "\n - m2km: Kilometres to Metres conversion" +
-                "\n - km2cm: Centimetres to Kilometres conversion" +
-                "\n - cm2km: Kilometres to Centimetres conversion");
+        System.out.print("""
+
+                 There are six commands that can currently be used
+                 - m2cm: Metres to Centimetres conversion
+                 - cm2m: Centimetres to Metres conversion
+                 - km2m: Metres to Kilometres conversion
+                 - m2km: Kilometres to Metres conversion
+                 - km2cm: Centimetres to Kilometres conversion
+                 - cm2km: Kilometres to Centimetres conversion\
+                """);
     }
     // energy helpsheet - displays conversion options for energy
 
     public static void energySheet(){
-        System.out.print("\n There are two commands that can currently be used" +
-                "\n j2kj: Joules to Kilojoules conversion" +
-                "\n - kj2j: Kilojoules to Joules conversion");
+        System.out.print("""
+
+                 There are two commands that can currently be used
+                 j2kj: Joules to Kilojoules conversion
+                 - kj2j: Kilojoules to Joules conversion\
+                """);
     }
 
     // --------ERROR SCREENS--------
