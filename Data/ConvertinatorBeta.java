@@ -266,7 +266,7 @@ public class ConvertinatorBeta {
                 speedSheet();
             default:
                 System.out.print("Invalid input. Please try again.\n") ;
-                tempMode();
+                speedMode();
                 break;
         }
     }
@@ -467,7 +467,7 @@ public class ConvertinatorBeta {
                 areaSheet();
             default:
                 System.out.print("Invalid input. Please try again.\n") ;
-                tempMode();
+                areaMode();
                 break;
         }
     }
@@ -485,7 +485,6 @@ public class ConvertinatorBeta {
             metres2ToCm2();
         }
 
-        ;
 
         double convertedArea = area * 10000;
         System.out.println("Your area is: "+convertedArea+"cm^2. Your conversion has been stored in a file.");
@@ -655,7 +654,7 @@ public class ConvertinatorBeta {
                 volumeSheet();
             default:
                 System.out.print("Invalid input. Please try again.\n") ;
-                tempMode();
+                volumeMode();
                 break;
         }
     }
@@ -744,7 +743,7 @@ public class ConvertinatorBeta {
                 lengthSheet();
             default:
                 System.out.print("Invalid input. Please try again.\n") ;
-                tempMode();
+                lengthMode();
                 break;
         }
     }
@@ -934,7 +933,7 @@ public class ConvertinatorBeta {
                 energySheet();
             default:
                 System.out.print("Invalid input. Please try again.\n") ;
-                tempMode();
+                energyMode();
                 break;
         }
     }
@@ -1068,6 +1067,6 @@ public class ConvertinatorBeta {
     // --------ERROR SCREENS--------
     public static void errScreen(){
         System.out.print("Invalid input. Please try again.\n");
-        ;
+        startScreen();
     }
 }
