@@ -1,5 +1,3 @@
-package Data;
-
 import java.util.*;
 import java.io.*;
 public class ConvertinatorBeta {
@@ -83,7 +81,7 @@ public class ConvertinatorBeta {
         System.out.println("Your temperature is: "+convertedTemp+"°F. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedTemp+"°F. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -112,7 +110,7 @@ public class ConvertinatorBeta {
         System.out.println("Your temperature is: "+convertedTemp+"°C. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedTemp+"°C. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -142,7 +140,7 @@ public class ConvertinatorBeta {
         System.out.println("Your temperature is: "+convertedTemp+"°F. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedTemp+"°F. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -172,7 +170,7 @@ public class ConvertinatorBeta {
         System.out.println("Your temperature is: "+convertedTemp+"°K. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedTemp+"°K. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -201,7 +199,7 @@ public class ConvertinatorBeta {
         System.out.println("Your temperature is: "+convertedTemp+"°C. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedTemp+"°C. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -230,7 +228,7 @@ public class ConvertinatorBeta {
         System.out.println("Your temperature is: "+convertedTemp+"°K. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedTemp+"°K. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -291,7 +289,7 @@ public class ConvertinatorBeta {
         System.out.println("Your speed is: "+convertedSpeed+"kph. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedSpeed+"kph. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -321,7 +319,7 @@ public class ConvertinatorBeta {
         System.out.println("Your speed is: "+convertedSpeed+"m/s. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedSpeed+"m/s. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -350,7 +348,7 @@ public class ConvertinatorBeta {
         System.out.println("Your speed is: "+convertedSpeed+"m/s. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedSpeed+"m/s. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -379,7 +377,7 @@ public class ConvertinatorBeta {
         System.out.println("Your speed is: "+convertedSpeed+"mph. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedSpeed+"mph. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -408,7 +406,7 @@ public class ConvertinatorBeta {
         System.out.println("Your speed is: "+convertedSpeed+"mph. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedSpeed+"mph. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -437,7 +435,7 @@ public class ConvertinatorBeta {
         System.out.println("Your speed is: "+convertedSpeed+"kph. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedSpeed+"mph. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -499,7 +497,7 @@ public class ConvertinatorBeta {
         System.out.println("Your area is: "+convertedArea+"cm^2. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedArea+"cm^2. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -528,7 +526,7 @@ public class ConvertinatorBeta {
         System.out.println("Your area is: "+convertedArea+"m^2. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedArea+"m^2. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -556,7 +554,7 @@ public class ConvertinatorBeta {
         System.out.println("Area / 1000000");
         System.out.println("Your area is: "+convertedArea+"km^2. Your conversion has been stored in a file.");
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedArea+"km^2. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -584,7 +582,7 @@ public class ConvertinatorBeta {
         System.out.println("Area X 1000000");
         System.out.println("Your area is: "+convertedArea+"m^2. Your conversion has been stored in a file.");
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedArea+"m^2. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -613,7 +611,7 @@ public class ConvertinatorBeta {
         System.out.println("Your area is: "+convertedArea+"km^2. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedArea+"km^2. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -642,7 +640,7 @@ public class ConvertinatorBeta {
         System.out.println("Your area is: "+convertedArea+"cm^2. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedArea+"cm^2. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -692,7 +690,7 @@ public class ConvertinatorBeta {
         System.out.println("Your volume is: "+convertedVolume+"cm^3. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedVolume+"cm^3. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -721,7 +719,7 @@ public class ConvertinatorBeta {
         System.out.println("Your volume is: "+convertedVolume+"m^3. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedVolume+"m^3. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -784,7 +782,7 @@ public class ConvertinatorBeta {
         System.out.println("Your length is: "+convertedLength+"cm. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedLength+"cm. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -812,7 +810,7 @@ public class ConvertinatorBeta {
         System.out.println("Your length is: "+convertedLength+"m. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedLength+"m. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -840,7 +838,7 @@ public class ConvertinatorBeta {
         System.out.println("Your length is: "+convertedLength+"m. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedLength+"m. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -868,7 +866,7 @@ public class ConvertinatorBeta {
         System.out.println("Your length is: "+convertedLength+"km. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedLength+"km. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -896,7 +894,7 @@ public class ConvertinatorBeta {
         System.out.println("Your length is: "+convertedLength+"cm. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedLength+"cm. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -924,7 +922,7 @@ public class ConvertinatorBeta {
         System.out.println("Your length is: "+convertedLength+"km. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedLength+"km. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -974,7 +972,7 @@ public class ConvertinatorBeta {
         System.out.println("Your energy measurement is: "+convertedEnergy+"kj. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedEnergy+"kj. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
@@ -1002,7 +1000,7 @@ public class ConvertinatorBeta {
         System.out.println("Your energy measurement is: "+convertedEnergy+"j. Your conversion has been stored in a file.");
 
         try {
-            FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
+            FileWriter out = new FileWriter("ConvertedMeasurement.txt");
             out.write("Your converted measurement is "+convertedEnergy+"j. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
