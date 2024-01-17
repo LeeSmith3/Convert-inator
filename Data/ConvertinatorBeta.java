@@ -225,11 +225,11 @@ public class ConvertinatorBeta {
         }
 
         double convertedTemp = temp + 273.15;
-        System.out.println("Your temperature is: "+convertedTemp+"°C. Your conversion has been stored in a file.");
+        System.out.println("Your temperature is: "+convertedTemp+"°K. Your conversion has been stored in a file.");
 
         try {
             FileWriter out = new FileWriter("Logs/ConvertedMeasurement.txt");
-            out.write("Your converted measurement is "+convertedTemp+"°C. Thank you for using the Convertinator!");
+            out.write("Your converted measurement is "+convertedTemp+"°K. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
             System.out.println("Error occurred writing to file: " + e.toString());
