@@ -56,7 +56,7 @@ public class ConvertinatorBeta {
             case "HELP":
                 tempSheet();
             default:
-                System.out.print("Invalid input. Please try again.\n") ;
+                System.out.print("Invalid input. Please try again.\n");
                 tempMode();
                 break;
         }
@@ -87,10 +87,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedTemp+"°F. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void fahrToCels(){
@@ -116,7 +116,7 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedTemp+"°C. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
 
@@ -135,7 +135,7 @@ public class ConvertinatorBeta {
             System.out.println("Invalid input. Please try again.");
             kelvToFahr();
         }
-        ;
+        
 
         double convertedTemp = (temp - 273.15) * 9/5 + 32;
 
@@ -146,10 +146,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedTemp+"°F. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void fahrToKelv(){
@@ -176,10 +176,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedTemp+"°K. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void kelvToCels(){
@@ -204,10 +204,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedTemp+"°C. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void celsToKelv(){
@@ -232,10 +232,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedTemp+"°K. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
     public static void speedMode(){
         Scanner input = new Scanner(System.in);
@@ -265,7 +265,7 @@ public class ConvertinatorBeta {
             case "HELP":
                 speedSheet();
             default:
-                System.out.print("Invalid input. Please try again.\n") ;
+                System.out.print("Invalid input. Please try again.\n");
                 speedMode();
                 break;
         }
@@ -292,10 +292,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedSpeed+"kph. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
 
     }
 
@@ -321,10 +321,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedSpeed+"m/s. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void mphToMps(){
@@ -349,10 +349,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedSpeed+"m/s. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void mpsToMph(){
@@ -377,10 +377,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedSpeed+"mph. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void kphToMph(){
@@ -405,10 +405,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedSpeed+"mph. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void mphToKph(){
@@ -433,10 +433,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedSpeed+"mph. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
     public static void areaMode(){
         Scanner input = new Scanner(System.in);
@@ -466,7 +466,7 @@ public class ConvertinatorBeta {
             case "HELP":
                 areaSheet();
             default:
-                System.out.print("Invalid input. Please try again.\n") ;
+                System.out.print("Invalid input. Please try again.\n");
                 areaMode();
                 break;
         }
@@ -494,10 +494,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedArea+"cm^2. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void cm2ToMetres2(){
@@ -522,10 +522,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedArea+"m^2. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void metres2ToKm2(){
@@ -549,10 +549,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedArea+"km^2. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void km2toMetres2(){
@@ -576,10 +576,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedArea+"m^2. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void cm2ToKm2(){
@@ -604,10 +604,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedArea+"km^2. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void km2ToCm2(){
@@ -632,10 +632,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedArea+"cm^2. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
     public static void volumeMode(){
         Scanner input = new Scanner(System.in);
@@ -653,7 +653,7 @@ public class ConvertinatorBeta {
             case "HELP":
                 volumeSheet();
             default:
-                System.out.print("Invalid input. Please try again.\n") ;
+                System.out.print("Invalid input. Please try again.\n");
                 volumeMode();
                 break;
         }
@@ -681,10 +681,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedVolume+"cm^3. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void cm3ToMetres3(){
@@ -709,10 +709,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedVolume+"m^3. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void lengthMode(){
@@ -742,7 +742,7 @@ public class ConvertinatorBeta {
             case "HELP":
                 lengthSheet();
             default:
-                System.out.print("Invalid input. Please try again.\n") ;
+                System.out.print("Invalid input. Please try again.\n");
                 lengthMode();
                 break;
         }
@@ -770,10 +770,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedLength+"cm. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void cmToMetres(){
@@ -798,10 +798,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedLength+"m. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void kmToMetres(){
@@ -826,10 +826,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedLength+"m. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void metresToKm(){
@@ -854,10 +854,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedLength+"km. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void kmToCm(){
@@ -882,10 +882,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedLength+"cm. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void cmToKm(){
@@ -910,10 +910,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedLength+"km. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void energyMode(){
@@ -932,7 +932,7 @@ public class ConvertinatorBeta {
             case "HELP":
                 energySheet();
             default:
-                System.out.print("Invalid input. Please try again.\n") ;
+                System.out.print("Invalid input. Please try again.\n");
                 energyMode();
                 break;
         }
@@ -960,10 +960,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedEnergy+"kj. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     public static void kjToJoules(){
@@ -988,10 +988,10 @@ public class ConvertinatorBeta {
             out.write("Your converted measurement is "+convertedEnergy+"j. Thank you for using the Convertinator!");
             out.close();
         } catch (IOException e) {
-            System.out.println("Error occurred writing to file: " + e.toString());
+            System.out.println("Error occurred writing to file: " + e);
         }
 
-        ;
+        
     }
 
     // --------Help-sheets--------
@@ -1006,7 +1006,7 @@ public class ConvertinatorBeta {
                 "\n - Length: enables length conversion " +
                 "\n - Energy: enables energy conversion " +
                 "\n \n");
-        ;
+        
     }
 
     // temperature helpsheet - displays conversion options for temperature
